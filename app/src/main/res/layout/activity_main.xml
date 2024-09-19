@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/social_links" />
+
+    <LinearLayout
+        android:id="@+id/social_links"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/button_portfolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portfolio" />
+
+        <Button
+            android:id="@+id/button_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blog Site" />
+
+        <Button
+            android:id="@+id/button_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook" />
+
+        <Button
+            android:id="@+id/button_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twitter" />
+
+        <Button
+            android:id="@+id/button_tiktok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TikTok" />
+
+        <Button
+            android:id="@+id/button_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram" />
+
+        <Button
+            android:id="@+id/button_linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinkedIn" />
+
+        <Button
+            android:id="@+id/button_gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gmail" />
+
+        <Button
+            android:id="@+id/button_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhatsApp" />
+
+        <Button
+            android:id="@+id/button_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts" />
+
+        <Button
+            android:id="@+id/button_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery" />
+
+        <Button
+            android:id="@+id/button_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
